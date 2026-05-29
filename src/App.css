@@ -96,6 +96,10 @@
   letter-spacing: 0;
 }
 
+.hero-names-wrap {
+  position: relative;
+}
+
 .hero-names-right {
   font-size: 40px;
   line-height: 1;
@@ -112,7 +116,9 @@
   font-weight: 300;
   position: absolute;
   color: rgba(93, 0, 30, 0.1);
-  left: 40%;
+  left: 50%;
+  top: 0px;
+  transform: translateX(-53%);
 }
 
 .vertical-separator {

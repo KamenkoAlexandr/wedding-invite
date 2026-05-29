@@ -116,10 +116,11 @@ const App = () => {
         <p className="hero-subtitle">
           ПРИГЛАШАЕМ ВАС <br /> НА НАШУ СВАДЬБУ
         </p>
-        <h1 className="hero-names">
-          АЛЕКСАНДР<span className="hero-names-separator">&</span>
-        </h1>
-        <h1 className="hero-names-right">АНАСТАСИЯ </h1>
+        <div className="hero-names-wrap">
+          <h1 className="hero-names">АЛЕКСАНДР</h1>
+          <span className="hero-names-separator">&</span>
+          <h1 className="hero-names-right">АНАСТАСИЯ </h1>
+        </div>
 
         <div className="vertical-separator" />
 
