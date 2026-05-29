@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react'
 import './App.css'
 import { HeartIcon } from './Heart'
 
+const assetPath = (filename) => `${import.meta.env.BASE_URL}${filename}`
+
 const SCHEDULE = [
   { time: '15:00', title: 'Начало фуршета' },
   { time: '16:00', title: 'Свадебная церемония' },
@@ -94,13 +96,17 @@ const App = () => {
             <p className="hero-photo-caption">
               - Интересно, кто будет моей женой?
             </p>
-            <img className="hero-card" src="/zhenix.jpeg" alt="Жених" />
+            <img
+              className="hero-card"
+              src={assetPath('zhenix.jpeg')}
+              alt="Жених"
+            />
           </div>
           <div className="hero-photo hero-photo-right">
             <p className="hero-photo-caption">- Ей буду я!</p>
             <img
               className="hero-card hero-card-offset"
-              src="/nevesta.jpeg"
+              src={assetPath('nevesta.jpeg')}
               alt="Невеста"
             />
           </div>
@@ -170,7 +176,7 @@ const App = () => {
         </div>
         <img
           className="venue-image"
-          src="/Place.png"
+          src={assetPath('Place.png')}
           alt="Усадьба Богдановичей"
         />
 
@@ -236,7 +242,7 @@ const App = () => {
           }}
         >
           *торжество состоится в среду, поэтому будем рады, если Вы сможете
-          заранее сохранить этот день для нас 🤍
+          заранее сохранить этот день для нас.
         </p>
       </section>
       {/************************ БЛОК ТАЙМИНГ КОНЕЦ  *************************/}
@@ -246,7 +252,7 @@ const App = () => {
       <section className="section" style={{ letterSpacing: '0.06rem' }}>
         <SectionTitle>ДРЕСС-КОД</SectionTitle>
         <p
-          style={{ width: '281px', margin: '0 auto', letterSpacing: '0.06rem' }}
+          style={{ width: '292px', margin: '0 auto', letterSpacing: '0.06rem' }}
         >
           Самое главное для нас - это ваше присутствие и радость этого дня,
           проведенного вместе.
@@ -265,7 +271,7 @@ const App = () => {
         <p
           style={{ width: '293px', margin: '0 auto', letterSpacing: '0.06rem' }}
         >
-          Нам очень важна эта атмосфера, и спасибо, что помогаете ее создать 🤍
+          Нам очень важна эта атмосфера, и спасибо, что помогаете ее создать.
         </p>
         <p className="palette-note" style={{ margin: '26px auto 30px' }}>
           Палитра ниже - для вдохновения.
@@ -343,13 +349,13 @@ const App = () => {
         </p>
         <div className="contacts-row">
           <a href="https://www.instagram.com/_madmazelka_/" target="_blank">
-            <img src="/inst.svg" alt="instagram" />
+            <img src={assetPath('inst.svg')} alt="instagram" />
           </a>
           <a href="https://t.me/alekame" target="_blank">
-            <img src="/tg.svg" alt="telegram" />
+            <img src={assetPath('tg.svg')} alt="telegram" />
           </a>
           <a href="tel:+375298552062" target="_blank">
-            <img src="/phone.svg" alt="phone" />
+            <img src={assetPath('phone.svg')} alt="phone" />
           </a>
         </div>
       </section>
@@ -357,7 +363,10 @@ const App = () => {
 
       {/************************ БЛОК ИГРА НАЧАЛО  *************************/}
       <section className="section game-section">
-        <SectionTitle>ПРИСОЕДИНЯЙТЕСЬ К ИГРЕ</SectionTitle>
+        <SectionTitle>
+          ПРИСОЕДИНЯЙТЕСЬ <br className="mobile-only-break" />
+          К ИГРЕ
+        </SectionTitle>
         <p>
           Вечером Вас будет ждать небольшая игра для хорошего настроения и
           приятный приз для победителя. Если захотите присоединиться — участие

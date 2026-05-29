@@ -173,6 +173,10 @@
   letter-spacing: 0;
 }
 
+.mobile-only-break {
+  display: none;
+}
+
 .section p {
   margin: 10px 0;
   font-size: 18px;
@@ -220,6 +224,7 @@
 
 .muted {
   color: rgba(93, 0, 30, 0.75);
+  font-size: 16px;
 }
 
 .month {
@@ -368,7 +373,7 @@ h3 {
 
 .tips-list {
   list-style: none;
-  margin: 0;
+  margin: 16px 0 0;
   padding: 0;
   text-align: left;
 }
@@ -451,8 +456,11 @@ h3 {
     font-size: 32px;
   }
 
+  .mobile-only-break {
+    display: block;
+  }
+
   .section p,
-  .tips-list p,
   .timeline p {
     font-size: 21px;
   }
