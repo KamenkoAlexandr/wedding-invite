@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 import { HeartIcon } from './Heart'
+import { Icon } from '@iconify/react'
 
 const assetPath = (filename) => `${import.meta.env.BASE_URL}${filename}`
 
@@ -351,14 +352,14 @@ const App = () => {
           Елизавете.
         </p>
         <div className="contacts-row">
-          <a href="https://www.instagram.com/_madmazelka_/" target="_blank">
-            <img src={assetPath('inst.svg')} alt="instagram" />
+          <a href="https://www.instagram.com/dobrova_wedding/" target="_blank">
+            <Icon icon="proicons:instagram" />
           </a>
-          <a href="https://t.me/alekame" target="_blank">
-            <img src={assetPath('tg.svg')} alt="telegram" />
+          <a href="https://t.me/Liza_LabirintGroup" target="_blank">
+            <Icon icon="la:telegram-plane" />
           </a>
           <a href="tel:+375298552062" target="_blank">
-            <img src={assetPath('phone.svg')} alt="phone" />
+            <Icon icon="solar:phone-linear" className="phone-icon" />
           </a>
         </div>
       </section>

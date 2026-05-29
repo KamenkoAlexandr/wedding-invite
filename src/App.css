@@ -135,7 +135,7 @@
 .hero-place,
 .hero-invite-text {
   margin: 8px 0;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .countdown {
@@ -429,16 +429,18 @@ h3 {
 }
 
 .contacts-row a {
-  text-decoration: none;
-  color: #5d001e;
-  border: 1px solid rgba(90, 58, 46, 0.24);
+  display: flex;
+  color: #5d001ea6;
+  border: 1px solid #5d001e59;
   border-radius: 30px;
-  padding: 8px;
-  font-size: 0;
+  padding: 6px;
+  font-size: 27px;
 }
 
-.contacts-row a img {
-  width: 22px;
+.contacts-row .phone-icon {
+  position: relative;
+  top: 2px;
+  left: -2px;
 }
 
 .game-section .closing {
