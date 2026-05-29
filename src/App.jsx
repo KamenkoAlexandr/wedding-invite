@@ -189,7 +189,10 @@ const App = () => {
         </a>
 
         <div className="transport-block">
-          <p className="muted" style={{ marginBottom: '104px' }}>
+          <p
+            className="muted"
+            style={{ marginBottom: '104px', fontSize: '16px' }}
+          >
             *для всех гостей будет организован комфортный трансфер из Минска.
             Просто расслабьтесь и наслаждайтесь дорогой — мы позаботимся обо
             всём.
@@ -364,15 +367,17 @@ const App = () => {
       {/************************ БЛОК ИГРА НАЧАЛО  *************************/}
       <section className="section game-section">
         <SectionTitle>
-          ПРИСОЕДИНЯЙТЕСЬ <br className="mobile-only-break" />
-          К ИГРЕ
+          ПРИСОЕДИНЯЙТЕСЬ <br className="mobile-only-break" />К ИГРЕ
         </SectionTitle>
         <p>
           Вечером Вас будет ждать небольшая игра для хорошего настроения и
           приятный приз для победителя. Если захотите присоединиться — участие
           составит 10$.
         </p>
-        <p className="closing">Здесь мы станем семьей - вместе с Вами.</p>
+        <p className="closing">
+          Здесь мы станем семьей - <br className="mobile-only-break" /> вместе с
+          Вами.
+        </p>
         <Divider />
         <p className="signature">
           Александр &amp; Анастасия

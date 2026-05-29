@@ -230,7 +230,7 @@
 .month {
   font-weight: 500 !important;
   letter-spacing: 0 !important;
-  margin-bottom: 14px !important;
+  margin-bottom: 16px !important;
 }
 
 .week-strip {
@@ -373,7 +373,7 @@ h3 {
 
 .tips-list {
   list-style: none;
-  margin: 16px 0 0;
+  margin: 8px 0 0;
   padding: 0;
   text-align: left;
 }
@@ -403,9 +403,9 @@ h3 {
   width: 275px;
 }
 
-.tip-time {
-  font-size: 18px !important;
-  font-weight: 600 !important;
+.tips-list p.tip-time {
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .increase-height {
@@ -441,7 +441,7 @@ h3 {
 
 .game-section .closing {
   margin: 98px auto 0 auto;
-  width: 177px;
+  width: 220px;
   letter-spacing: 0;
 }
 
@@ -463,5 +463,10 @@ h3 {
   .section p,
   .timeline p {
     font-size: 21px;
+  }
+  .tips-list h4,
+  .tips-list p.tip-time,
+  p.month {
+    font-size: 23px;
   }
 }
