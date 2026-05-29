@@ -99,7 +99,7 @@ const App = () => {
             </p>
             <img
               className="hero-card"
-              src={assetPath('zhenix.jpeg')}
+              src={assetPath('zhenix.jpg')}
               alt="Жених"
             />
           </div>
@@ -107,7 +107,7 @@ const App = () => {
             <p className="hero-photo-caption">- Ей буду я!</p>
             <img
               className="hero-card hero-card-offset"
-              src={assetPath('nevesta.jpeg')}
+              src={assetPath('nesquik.jpg')}
               alt="Невеста"
             />
           </div>
