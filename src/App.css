@@ -65,7 +65,7 @@
 }
 
 .hero-card {
-  width: 171px;
+  width: 187px;
   height: 207px;
   border-radius: 10px;
   object-fit: cover;
@@ -365,8 +365,8 @@ h3 {
 }
 
 .palette span {
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   margin-left: -8px;
 }
@@ -486,4 +486,33 @@ h3 {
   .tips-list h4 {
     margin: 2px 0 10px;
   }
+}
+
+@media (max-width: 400px) {
+  .hero-card {
+    width: 175px;
+  }
+}
+
+.bg-video-wrap {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.bg-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.body-bg-video {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  pointer-events: none;
 }
